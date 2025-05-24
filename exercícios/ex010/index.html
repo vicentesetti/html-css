@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/download.png" type="image/x-icon">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório público no GitHub</a></p>
+    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo" target="_blank" rel="external">canal gratuito no YouTube</a></p>
+    <hr>
+    <p>
+        Envelopando o texto que quero linkar com <code><mark>&lt;a&gt;</mark></code>, preciso inserir o link que quero usar</mark>
+    </p>
+    <p>
+        Também posso escolher se o link será aberto na janela atual, ou em uma nova janela, usando <mark><code>target="_blank" rel="external"</code></mark> após o link dentro de <mark><code>&lt;a&gt;</code></mark>
+    </p>
+    <p>
+        <mark><code>target="_blank"</code></mark>: indica que o link será aberto em uma nova aba
+    </p>  
+    <p>
+        <mark><code>rel="external"</code></mark>: indica que o link é externo
+    </p>
+    <h2>Usando links internos</h2>
+    <p>Esta é a primeira página do site. Se você quiser pode acessar também a minha <a href="pag002.html" rel="next">segunda página</a></p>
+    <hr>
+    <p>Agora eu nao uso <code><mark>target="_blank"</mark></code>, pois a segunda página é um link interno, mas eu uso <code><mark>rel="next"</mark></code>, indicando que a página 002 é a próxima página</p>
+    <hr>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next">página de notícias</a></p>
+    <hr>
+    <h1>Links para Download</h1>
+    <ul>
+        <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/meulivro.zip" download="meulivro.zip" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+    <p>Dentro da tag <mark><code>&lt;a&gt;</code></mark> entre as aspas do <mark><code>href</code></mark> eu seleciono o meu arquivo, usando o parâmetro <code><mark>download</mark></code> indico o arquivo que quero baixar, como no exemplo, meulivro.pdf, e depois adiciono mais um parâmetro <code><mark>type="application/pdf"</mark></code>, varia conforme o tipo do arquivo.</p>
+</body>
+<mark></html></mark>
